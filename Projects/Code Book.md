@@ -1,16 +1,16 @@
 ## The “run_analysis.R” script can be interpreted as follows:
 
 - 1.Download the files to your working directory and load the following datasets into R
-  - a.Training
-  - i.X_Train
-		---* ii.y_Train
-		iii.subject_train
-	b.Test
-		i.X_Test
-		ii.y_Test  
-		iii.subject_test
-	c.Features dataset. 
-		i.Clean the column names of the features dataset for “()”, “-“, and covert all the column names to lower case 
+  - Training 
+  	- X_Train
+        - y_Train
+        - subject_train
+  - Test
+        - X_Test
+	- y_Test  
+	- subject_test
+  - Features dataset.
+  -   Clean the column names of the features dataset for “()”, “-“, and covert all the column names to lower case 
 - 2.Apply column names to the X_train & X_test dataset by using the features dataset
 - 3.Merge the X_Train & X_Test datasets to create a dataset for “x”
 - 4.Merge the subject_train & subject_test to create dataset for “subject”
