@@ -1,8 +1,8 @@
 ## The “run_analysis.R” script can be interpreted as follows:
 
 - 1.Download the files to your working directory and load the following datasets into R
-  a.Training
-		---* i.X_Train
+  - a.Training
+  - i.X_Train
 		---* ii.y_Train
 		iii.subject_train
 	b.Test
