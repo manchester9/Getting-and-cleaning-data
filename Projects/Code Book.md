@@ -1,22 +1,23 @@
-The “run_analysis.R” script can be interpreted as follows:
-1.Download the files to your working directory and load the following datasets into R
-	a.Training
-		i.X_Train
-		ii.y_Train
-		iii.subject_train
-	b.Test
-		i.X_Test
-		ii.y_Test  
-		iii.subject_test
-	c.Features dataset. 
-		i.Clean the column names of the features dataset for “()”, “-“, and covert all the column names to lower case 
-2.Apply column names to the X_train & X_test dataset by using the features dataset
-3.Merge the X_Train & X_Test datasets to create a dataset for “x”
-4.Merge the subject_train & subject_test to create dataset for “subject”
-5.Read in the activity labels dataset and apply the colnames to y_train & y_test
-6.Merge the y_Train & y_Test datasets to create a dataset for “y”
-7.Isolate columns from the “x” which have words “mean” and “std”. Name these datasets “X_mean” and “X_std” accordingly.
-8.Create a dataset called “merged_data” which has Subject, y, X_mean, & X_Std
-9.Apply relevant column names to the “merged_data”
-10.Create a final “tidy_data” with the average of each variable for each activity & each subject
-11.Output the final “tidy_data” as a text file
+#### Getting and cleaning data code book
+
+- Below is the site and the zipped file link from where all the datasets were obtained:
+  - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+  - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+- Below are the datasets and transformations used to complete the project
+- 1.Download the files to your working directory and load the following datasets into R
+  - Training (X_Train, y_Train, subject_train)
+  - Test (X_Test, y_Test, subject_test)
+  - Features dataset: Clean the column names of the features dataset for â€œ()â€, and â€œ-â€œ
+- 2.Apply column names to the X_train & X_test dataset by using the features dataset
+- 3.Merge the X_Train & X_Test datasets to create a dataset for â€œxâ€ of dimensions 10,299 * 561
+- 4.Merge the subject_train & subject_test to create dataset for â€œsubjectâ€ of dimensions 10,299 * 1
+- 5.Read in the activity labels dataset and apply the colnames to y_train & y_test
+- 6.Merge the y_Train & y_Test datasets to create a dataset for â€œyâ€ of dimensions 10,299 * 1
+- 7.Isolate columns from the â€œxâ€ which have words â€œmeanâ€ and â€œstdâ€. Name these datasets â€œX_meanâ€ and â€œX_stdâ€ accordingly.
+- 8.Create a dataset called â€œmerged_dataâ€ which is a combination of "Subject", "y", "X_mean", & "X_Std"
+- 9.Apply relevant column names to the â€œmerged_dataâ€
+- 10.Create a final â€œtidy_dataâ€ with the average of each variable for each activity & each subject
+- 11.Output the final â€œtidy_dataâ€ as a text file
+
+
