@@ -1,4 +1,10 @@
-#### The “run_analysis.R” script can be interpreted as follows:
+#### Getting and cleaning data code book
+
+- Below is the site from where the data was obtained:
+- http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+- The data for the project
+- https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 - 1.Download the files to your working directory and load the following datasets into R
   - Training (X_Train, y_Train, subject_train)
@@ -14,3 +20,5 @@
 - 9.Apply relevant column names to the “merged_data”
 - 10.Create a final “tidy_data” with the average of each variable for each activity & each subject
 - 11.Output the final “tidy_data” as a text file
+
+
