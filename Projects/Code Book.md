@@ -4,7 +4,7 @@
   - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
   - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
--Below are the datasets and transformations used to complete the project
+- Below are the datasets and transformations used to complete the project
 - 1.Download the files to your working directory and load the following datasets into R
   - Training (X_Train, y_Train, subject_train)
   - Test (X_Test, y_Test, subject_test)
