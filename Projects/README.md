@@ -1,6 +1,6 @@
-#### Getting and cleaning data Project
+#### Getting and cleaning data Project README.md
 
-##### The "run_analysis.R" script does the following:
+###### The "run_analysis.R" script does the following:
 
 - 1. Create a "data" directory if one does not exist
 - 2. Download the files to the "data" directory
