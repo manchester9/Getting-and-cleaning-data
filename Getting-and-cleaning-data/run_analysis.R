@@ -16,6 +16,11 @@ unzip(destfile,exdir = "./data")
 X_train <- read.table("./data/UCI HAR Dataset/train/X_train.txt") # 7352 by 561
 y_train <- read.table("./data/UCI HAR Dataset/train/y_train.txt") # 7352 by 1
 features <- read.table("./data/UCI HAR Dataset/features.txt") # 561 by 2
+# Clean the column lables by removing "()", "-" symbols in the name, and 
+# make the mean and standard deviation lower case
+features <- gsub("-", "", features$V2) # remove "-" in column names 
+features <- gsub("\\()", "", features$V2) # remove ()
+
 colnames(X_train) <- features[, 2]
 
 # Import subject_train: rows are subjects
@@ -61,7 +66,6 @@ merged_data[1:3, 1:3]  # take a look
 ########------########
 ## Part 5: create a second tidy data set with the average of each variable for each activity and each subject
 tidy_data <- aggregate(merged_data, by=list(merged_data$Subject, merged_data$Activity), mean)  
-
 dim(tidy_data)
 tidy_data[1:100, 1:3] #take a look
 
